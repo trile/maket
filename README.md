@@ -6,7 +6,7 @@ Quick start for html and sass development (source from Bootstrap 4.0.0-alpha.6)
 
 2. run `grunt server` + turn on live-reload on your browsers.
 
-3. Start your development at `app/ejs/index.ejs` and `app/scss/main.scss`
+3. Start your development at `docs/ejs/index.ejs` and `docs/scss/main.scss`
 
 ### Notes
 - If you dont want to use ejs, you can directly edit the result html file, remember to delete the ejs so it does not override your work.

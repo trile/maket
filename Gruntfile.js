@@ -3,7 +3,7 @@ module.exports = function (grunt) {
   const sass = require('node-sass');
 
   grunt.initConfig({
-    //copy source from Bootstrap folder in node_modules to app
+    //copy source from Bootstrap folder in node_modules to docs
     copy: {
       bootstrap_sass: {
         files: [
@@ -11,19 +11,19 @@ module.exports = function (grunt) {
             expand: true,
             flatten: true,
             src: ["node_modules/bootstrap/scss/*"],
-            dest: "app/scss/vendors/bootstrap"
+            dest: "docs/scss/vendors/bootstrap"
           },
           {
             expand: true,
             flatten: true,
             src: ["node_modules/bootstrap/scss/mixins/*"],
-            dest: "app/scss/vendors/bootstrap/mixins"
+            dest: "docs/scss/vendors/bootstrap/mixins"
           },
           {
             expand: true,
             flatten: true,
             src: ["node_modules/bootstrap/scss/utilities/*"],
-            dest: "app/scss/vendors/bootstrap/utilities"
+            dest: "docs/scss/vendors/bootstrap/utilities"
           }
         ]
       },
@@ -31,25 +31,25 @@ module.exports = function (grunt) {
         expand: true,
         flatten: true,
         src: ["node_modules/font-awesome/scss/*"],
-        dest: "app/scss/vendors/font-awesome"
+        dest: "docs/scss/vendors/font-awesome"
       },
       bootstrap_dist: {
         expand: true,
         flatten: true,
         src: ["node_modules/bootstrap/dist/css/bootstrap.min.*"],
-        dest: "app/css/"
+        dest: "docs/css/"
       },
       jquery: {
         expand: true,
         flatten: true,
         src: ["node_modules/jquery/dist/jquery.min.*"],
-        dest: "app/js/"
+        dest: "docs/js/"
       },
       bootstrap_js: {
         expand: true,
         flatten: true,
         src: ["node_modules/bootstrap/dist/js/bootstrap.min.js"],
-        dest: "app/js/"
+        dest: "docs/js/"
       }
     },
 
@@ -57,20 +57,20 @@ module.exports = function (grunt) {
     clean: {
       reset: {
         src: [
-          "app/css/main.css",
-          "app/css/main.min.css",
-          "app/css/main.css.map",
-          "app/css/main.min.css.map",
-          "app/js/jquery.min.*",
-          "app/js/bootstrap.min.*",
-          "app/less/vendors"
+          "docs/css/main.css",
+          "docs/css/main.min.css",
+          "docs/css/main.css.map",
+          "docs/css/main.min.css.map",
+          "docs/js/jquery.min.*",
+          "docs/js/bootstrap.min.*",
+          "docs/less/vendors"
         ]
       },
       development: {
-        src: ["app/css/main.css", "app/css/main.min.css"]
+        src: ["docs/css/main.css", "docs/css/main.min.css"]
       },
       dist: {
-        src: ["app/css/main.css", "app/css/main.min.css"]
+        src: ["docs/css/main.css", "docs/css/main.min.css"]
       }
     },
 
@@ -82,7 +82,7 @@ module.exports = function (grunt) {
           sourceMap: true
         },
         files: {
-          "app/css/main.css": "app/scss/main.scss"
+          "docs/css/main.css": "docs/scss/main.scss"
         }
       },
       dist: {
@@ -90,7 +90,7 @@ module.exports = function (grunt) {
           sourceMap: true
         },
         files: {
-          "app/css/main.css": "app/scss/main.scss"
+          "docs/css/main.css": "docs/scss/main.scss"
         }
       }
     },
@@ -107,41 +107,41 @@ module.exports = function (grunt) {
       },
       development: {
         expand: true,
-        cwd: "app/css",
+        cwd: "docs/css",
         src: ["main.css"],
-        dest: "app/css"
+        dest: "docs/css"
       },
       dist: {
         expand: true,
-        cwd: "app/css",
+        cwd: "docs/css",
         src: ["main.css"],
-        dest: "app/css"
+        dest: "docs/css"
       }
     },
 
     // Set up proper format for css files
     csscomb: {
       options: {
-        config: "app/less/.csscomb.json"
+        config: "docs/less/.csscomb.json"
       },
       development: {
         expand: true,
-        cwd: "app/css/",
+        cwd: "docs/css/",
         src: ["main.css", "!*.min.css"],
-        dest: "app/css/"
+        dest: "docs/css/"
       },
       dist: {
         expand: true,
-        cwd: "app/css/",
+        cwd: "docs/css/",
         src: ["main.css", "!*.min.css"],
-        dest: "app/css/"
+        dest: "docs/css/"
       }
     },
 
     ejs: {
       development: {
-        src: ["app/ejs/**/*.ejs", "!app/ejs/partials/**/*"],
-        dest: "app",
+        src: ["docs/ejs/**/*.ejs", "!docs/ejs/partials/**/*"],
+        dest: "docs",
         expand: true,
         flatten: true,
         ext: ".html"
@@ -151,8 +151,8 @@ module.exports = function (grunt) {
     // Minimize CSS files
     cssmin: {
       development: {
-        src: ["app/css/main.css"],
-        dest: "app/css/main.min.css"
+        src: ["docs/css/main.css"],
+        dest: "docs/css/main.min.css"
       },
       dist: {
         options: {
@@ -164,8 +164,8 @@ module.exports = function (grunt) {
           sourceMapInlineSources: true,
           advanced: false
         },
-        src: ["app/css/main.css"],
-        dest: "app/css/main.min.css"
+        src: ["docs/css/main.css"],
+        dest: "docs/css/main.min.css"
       }
     },
 
@@ -176,12 +176,12 @@ module.exports = function (grunt) {
       },
       development: {
         files: {
-          "app/js/main.min.js": ["app/js/*.js", "!app/js/main.min.js"]
+          "docs/js/main.min.js": ["docs/js/*.js", "!docs/js/main.min.js"]
         }
       },
       dist: {
         files: {
-          "app/js/main.min.js": ["app/js/*.js", "!app/js/main.min.js"]
+          "docs/js/main.min.js": ["docs/js/*.js", "!docs/js/main.min.js"]
         }
       }
     },
@@ -191,7 +191,7 @@ module.exports = function (grunt) {
       options: {
         port: 8080,
         livereload: 42201,
-        base: "app",
+        base: "docs",
         hostname: "localhost"
       },
       livereload: {
@@ -204,7 +204,7 @@ module.exports = function (grunt) {
     // Watch files to rerun workflow and use live reload to refresh browser
     watch: {
       sass: {
-        files: ["app/scss/**/*.scss"],
+        files: ["docs/scss/**/*.scss"],
         tasks: [
           "sass:development",
           "postcss:development",
@@ -213,14 +213,14 @@ module.exports = function (grunt) {
         ]
       },
       ejs: {
-        files: ["app/ejs/**/*.ejs", "!app/ejs/partials/**/*"],
+        files: ["docs/ejs/**/*.ejs", "!docs/ejs/partials/**/*"],
         tasks: ["ejs:development"]
       },
       livereload: {
         options: {
           livereload: "<%= connect.options.livereload %>"
         },
-        files: ["{,*/}*.html", "app/css/{,*/}*.css", "app/js/{,*/}*.js"]
+        files: ["{,*/}*.html", "docs/css/{,*/}*.css", "docs/js/{,*/}*.js"]
       }
     }
   });
