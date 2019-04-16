@@ -24,7 +24,7 @@
     }
 
     #maket-path {
-      fill: $black;
+      fill: #333333;
       stroke: $black;
       stroke-dasharray: 1000;
 
@@ -33,7 +33,7 @@
 
       @keyframes logo {
         0% {
-          stroke-width: 2pt;
+          stroke-width: 1pt;
           stroke-dashoffset: 1000;
           fill-opacity: 0;
         }
@@ -44,7 +44,7 @@
         100% {
           stroke-dashoffset: 0;
           fill-opacity: 1;
-          stroke-width: 0pt;
+          stroke-width: 0;
         }
       }
     }

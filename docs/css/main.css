@@ -175,7 +175,7 @@ body {
     margin-left: 2rem;
     height: 2rem; }
   .navigation .logo #maket-path {
-    fill: #000000;
+    fill: #333333;
     stroke: #000000;
     stroke-dasharray: 1000;
     stroke-width: 0;
@@ -184,7 +184,7 @@ body {
 
 @-webkit-keyframes logo {
   0% {
-    stroke-width: 2pt;
+    stroke-width: 1pt;
     stroke-dashoffset: 1000;
     fill-opacity: 0; }
   50% {
@@ -192,11 +192,11 @@ body {
   100% {
     stroke-dashoffset: 0;
     fill-opacity: 1;
-    stroke-width: 0pt; } }
+    stroke-width: 0; } }
 
 @keyframes logo {
   0% {
-    stroke-width: 2pt;
+    stroke-width: 1pt;
     stroke-dashoffset: 1000;
     fill-opacity: 0; }
   50% {
@@ -204,7 +204,7 @@ body {
   100% {
     stroke-dashoffset: 0;
     fill-opacity: 1;
-    stroke-width: 0pt; } }
+    stroke-width: 0; } }
   .navigation .logo > img {
     margin-left: 2rem;
     height: 2rem; }
