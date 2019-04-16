@@ -213,7 +213,7 @@ module.exports = function (grunt) {
         ]
       },
       ejs: {
-        files: ["docs/ejs/**/*.ejs", "!docs/ejs/partials/**/*"],
+        files: ["docs/ejs/**/*.ejs"],
         tasks: ["ejs:development"]
       },
       livereload: {

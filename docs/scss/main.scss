@@ -12,7 +12,7 @@
 ********/
 
 /* If you wrire your own scss please use the below structure */
-/*******
+
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
@@ -22,14 +22,15 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+
+@import 'components/navigation';
+@import 'components/hero';
+@import 'components/footer';
+
 @import 'components/button';
 @import 'components/form';
 
-@import 'layout/navigation';
-@import 'layout/header';
-@import 'layout/grid';
-@import 'layout/footer';
+
 
 @import 'pages/home';
-********/
 
