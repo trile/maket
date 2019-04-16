@@ -9,12 +9,45 @@
   height: 5rem;
   z-index: 5;
 
-  .hamburger {
+  & .hamburger {
     display: none;
     margin-right: 2rem;
   }
-  .hamburger:hover {
+  & .hamburger:hover {
     cursor: pointer;
+  }
+
+  & .logo {
+    svg {
+      margin-left: 2rem;
+      height: 2rem;
+    }
+
+    #maket-path {
+      fill: $black;
+      stroke: $black;
+      stroke-dasharray: 1000;
+
+      stroke-width: 0;
+      animation: logo 4s linear;
+
+      @keyframes logo {
+        0% {
+          stroke-width: 2pt;
+          stroke-dashoffset: 1000;
+          fill-opacity: 0;
+        }
+        50% {
+          fill-opacity: 0;
+        }
+
+        100% {
+          stroke-dashoffset: 0;
+          fill-opacity: 1;
+          stroke-width: 0pt;
+        }
+      }
+    }
   }
 
   .logo > img {

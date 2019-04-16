@@ -170,6 +170,40 @@ body {
     margin-right: 2rem; }
   .navigation .hamburger:hover {
     cursor: pointer; }
+  .navigation .logo svg {
+    margin-left: 2rem;
+    height: 2rem; }
+  .navigation .logo #maket-path {
+    fill: #000000;
+    stroke: #000000;
+    stroke-dasharray: 1000;
+    stroke-width: 0;
+    -webkit-animation: logo 4s linear;
+            animation: logo 4s linear; }
+
+@-webkit-keyframes logo {
+  0% {
+    stroke-width: 2pt;
+    stroke-dashoffset: 1000;
+    fill-opacity: 0; }
+  50% {
+    fill-opacity: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+    stroke-width: 0pt; } }
+
+@keyframes logo {
+  0% {
+    stroke-width: 2pt;
+    stroke-dashoffset: 1000;
+    fill-opacity: 0; }
+  50% {
+    fill-opacity: 0; }
+  100% {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+    stroke-width: 0pt; } }
   .navigation .logo > img {
     margin-left: 2rem;
     height: 2rem; }
