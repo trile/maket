@@ -15,13 +15,14 @@
   & .hero-image img {
     width: 100%;
     object-fit: cover;
+    object-position: bottom;
     height: 75vh;
   }
 
   & .hero-content {
     min-width: 50rem;
     position: absolute;
-    top: calc(50%);
+    top: calc(50% - 5rem);
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;

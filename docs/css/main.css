@@ -277,11 +277,13 @@ body {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    -o-object-position: bottom;
+       object-position: bottom;
     height: 75vh; }
   .hero .hero-content {
     min-width: 50rem;
     position: absolute;
-    top: calc(50%);
+    top: calc(50% - 5rem);
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
