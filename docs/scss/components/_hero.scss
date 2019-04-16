@@ -1,21 +1,53 @@
 .hero {
   margin-top: -5rem;
-
-  & img {
-    width: 100%;
-    object-fit: cover;
-    height: 75vh;
-  }
+  position:relative;
 
   &:after {
     margin-top: -5rem;
     content:' ';
     position: absolute;
     width: 100%;
-    height: 75vh;
+    height: 25vh;
     top:0; left:0;
-    background:rgba(255,255,255,.3);
+    background:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
   }
 
+  & .hero-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 75vh;
+  }
 
+  & .hero-content {
+    min-width: 50rem;
+    position: absolute;
+    top: calc(50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+
+    & h3 {
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 2.4rem;
+
+      span {
+        display: inline-block;
+      }
+    }
+
+    .author {
+      margin-bottom: 3rem;
+      font-style: italic;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    & .hero-content {
+      min-width: 25rem;
+    }
+  }
 }

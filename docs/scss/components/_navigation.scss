@@ -83,27 +83,27 @@
 @media screen and (max-width: 600px) {
   .navigation {
 
-    nav {
+    & nav {
       position: absolute;
       top: 5rem;
-      width: 75%;
+      left: 100%;
+      width: 100%;
       background: $white;
       z-index: 10;
-      left: 100%;
-
       transition: 0.6s ease-out;
     }
 
-    nav.expanded {
-      left: 50%;
+    & nav.expanded {
+      left: 0;
     }
 
     & ul {
       flex-flow: row wrap;
+      padding: 2rem 0;
     }
 
     & ul > li {
-      padding: .5rem 0;
+      padding: 1rem 0;
       flex-basis: 100%;
     }
 
