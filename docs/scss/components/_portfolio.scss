@@ -1,0 +1,16 @@
+.portfolios {
+  margin: 0 0;
+  padding: 3rem 5rem;
+  background: $black;
+  color: $white;
+
+  .portfolios__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .portfolios__item {
+    min-height: 200px;
+  }
+
+}

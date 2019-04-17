@@ -1,4 +1,6 @@
 .navigation {
+  margin: 0 0;
+  padding: 0 5rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -6,20 +8,18 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  height: 5rem;
+  height: 10rem;
   z-index: 5;
 
-  & .hamburger {
+  & .nav__hamburger {
     display: none;
-    margin-right: 2rem;
   }
-  & .hamburger:hover {
+  & .nav__hamburger:hover {
     cursor: pointer;
   }
 
-  & .logo {
+  & .nav__logo {
     svg {
-      margin-left: 2rem;
       height: 2rem;
     }
 
@@ -51,7 +51,6 @@
   }
 
   .logo > img {
-    margin-left: 2rem;
     height: 2rem;
   }
 
@@ -67,7 +66,7 @@
 
   & ul > li {
     flex: 1 1 0;
-    padding: 0 1rem;
+    padding: 0 2rem;
     text-align: center;
 
     font-weight: 500;
@@ -76,16 +75,24 @@
     a {
       color: $black;
       text-decoration: none;
+      text-transform: uppercase;
+      transition: .3s;
+    }
+
+    a:hover {
+      color: $white;
+      text-decoration: none;
+      text-transform: uppercase;
     }
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: $TABLET-SIZE) {
   .navigation {
 
     & nav {
       position: absolute;
-      top: 5rem;
+      top: 10rem;
       left: 100%;
       width: 100%;
       background: $white;
@@ -105,9 +112,13 @@
     & ul > li {
       padding: 1rem 0;
       flex-basis: 100%;
+
+      a:hover {
+        color: $black;
+      }
     }
 
-    .hamburger {
+    & .nav__hamburger {
       display: block;
       margin-left: auto;
     }

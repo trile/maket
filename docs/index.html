@@ -9,6 +9,7 @@
     <link rel="icon" href="img/fav.ico" type="image/ico">
     <!-- Custom styles for this template -->
     <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="css/main.min.css" rel="stylesheet">
 
 </head>
@@ -16,7 +17,7 @@
 <body>
 
     <section class="navigation">
-    <div class="logo"><?xml version="1.0" encoding="UTF-8"?>
+    <div class="nav__logo"><?xml version="1.0" encoding="UTF-8"?>
         <svg viewBox="0 0 398 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
             <g id="Page-1" stroke="#aaaaaa" stroke-width="2" fill="none" fill-rule="evenodd">
@@ -26,9 +27,9 @@
             </g>
         </svg>
     </div>
-    <div class="hamburger">☰</div>
-    <nav class="menu">
-        <ul class="nav-bar">
+    <div class="nav__hamburger">☰</div>
+    <nav class="nav__menu">
+        <ul class="menu__nav-bar">
             <li><a href="#">Home</a></li>
             <li><a href="#">Service</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -41,17 +42,66 @@
 
 
     <section class="hero">
-        <div class="hero-image"><img src="img/hero-1.jpg" alt=""></div>
-        <div class="hero-content">
-            <h3><span>Create with the heart;</span> <span>build with the mind.</span></h3>
-            <div class="author">Criss Jami</div>
+        <div class="hero__image"><img src="img/hero/hero-4.jpg" alt=""></div>
+        <div class="hero__content">
+            <h1><span>We design.</span> <span>We build.</span> <span>We create.</span></h1>
             <a href="#" class="btn">Explore</a>
         </div>
     </section>
 
-    <section class="services">Service</section>
+    <section class="services">
+        <div class="section-header">
+            <h1>
+                Our Services
+            </h1>
+        </div>
+        <div class="services__wrapper">
+            <div class="services__item">
+                    <div class="services__item-img" data-aos="fade-right">
+                    <!-- <div class="services__item-img"> -->
+                        <img src="img/services/newspaper.svg"  alt="">
+                    </div>
+                <h2>Graphic</h2>
+                <p>Magazines, logos, leaflets</p>
+            </div>
+            <div class="services__item">
+                <div class="services__item-img" data-aos="fade-up">
+                <!-- <div class="services__item-img"> -->
+                    <img src="img/services/hotel.svg" alt="">
+                </div>
+                <h2>Architecture</h2>
+                <p>Buildings, houses, shops</p>
+            </div>
+            <div class="services__item">
+                <div class="services__item-img" data-aos="fade-left">
+                <!-- <div class="services__item-img"> -->
+                    <img src="img/services/window.svg" alt="">
+                </div>
+                <h2>Web</h2>
+                <p>Websites, applications, templates</p>
+            </div>
+        </div>
 
-    <section class="porfolio">Portfolio</section>
+    </section>
+
+    <section class="portfolios">
+        <div class="section-header">
+            <h1>
+                Portfolio
+            </h1>
+        </div>
+        <div class="portfolios__wrapper">
+            <div class="portfolios__item" style="background: url('img/');">
+                VietinBank
+            </div>
+            <div class="portfolios__item">
+                Heritage Fashion -  Vietnam Airline
+            </div>
+            <div class="portfolios__item">
+                Golf Vietnam
+            </div>
+        </div>
+    </section>
 
     <section class="team">Team</section>
 
@@ -69,6 +119,7 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/maket.js"></script>
 </body>
 </html>

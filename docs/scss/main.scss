@@ -13,6 +13,7 @@
 
 /* If you wrire your own scss please use the below structure */
 
+@import 'abstracts/fonts';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/variables';
@@ -25,6 +26,8 @@
 
 @import 'components/navigation';
 @import 'components/hero';
+@import 'components/services';
+@import 'components/portfolio';
 @import 'components/footer';
 
 @import 'components/button';

@@ -21,3 +21,29 @@ body {
     font-size: $default-font-size;
     overflow-x: hidden;
 }
+
+section {
+    margin: 3rem 5rem;
+}
+
+h1 {
+    margin-bottom: 3rem;
+    font-weight: 800;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+p {
+    font-weight: 300;
+}
+
+.section-header {
+    text-align: center;
+  }
+
+@media screen and (max-width: $TABLET-SIZE) {
+    section {
+        margin: 3rem 3rem;
+    }
+}
+
