@@ -4,13 +4,89 @@
   background: $black;
   color: $white;
 
-  .portfolios__wrapper {
+
+
+  & .portfolios__wrapper {
+    margin-bottom: 3rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
   }
 
-  .portfolios__item {
-    min-height: 200px;
-  }
+  & .portfolios__item {
+    position: relative;
+    min-width: 25rem;
+    min-height: 25rem;
+    background-size: cover;
+    transition: background 0.5s;
 
+    &::after {
+      content:' ';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top:0;
+      left:0;
+      background-color: rgba(0,0,0,.5);
+      transition: all 0.3s;
+    }
+
+    &:hover::after {
+      background-color: rgba(0,0,0,.2);
+    }
+
+    a {
+      opacity: 0;
+      transition: all 0.3s;
+      // display: none;
+    }
+
+    &:hover a {
+      opacity: 1;
+    }
+
+    & > img {
+      width: 100%;
+      opacity: 0;
+    }
+
+    & .portfolio__info {
+      position: absolute;
+      width: 100%;
+      bottom: 2rem;
+      z-index: 5;
+      text-align: center;
+
+      & span {
+        display: inline-block;
+      }
+    }
+
+    & .client__name {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 0rem;
+      transition: all 0.3s;
+    }
+
+    &:hover .client__name {
+      margin-bottom: 2rem;
+      transition: all 0.3s;
+    }
+
+  }
+}
+
+@media screen and (min-width: $LARGE-DESKTOP-SIZE) {
+  .portfolios {
+    & .portfolios__wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    & .portfolios__item {
+      min-height: 30rem;
+    }
+  }
 }
