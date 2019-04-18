@@ -167,7 +167,8 @@ body {
   font-size: 1.4rem; }
 
 .maket-page-wrapper {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative; }
 
 section {
   margin: 3rem 5rem; }
