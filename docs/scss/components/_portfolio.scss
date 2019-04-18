@@ -21,6 +21,12 @@
     background-size: cover;
     transition: background 0.5s;
 
+    & > img {
+      max-height: 100px;
+      position: absolute;
+      z-index: 100;
+    }
+
     &::after {
       content:' ';
       position: absolute;
@@ -44,11 +50,6 @@
 
     &:hover a {
       opacity: 1;
-    }
-
-    & > img {
-      width: 100%;
-      opacity: 0;
     }
 
     & .portfolio__info {

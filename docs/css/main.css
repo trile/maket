@@ -170,11 +170,15 @@ body {
 section {
   margin: 3rem 5rem; }
 
-h1 {
+h1, h2 {
   margin-bottom: 3rem;
   font-weight: 800;
   font-size: 2.4rem;
   text-transform: uppercase; }
+
+h3 {
+  font-size: 2rem;
+  margin-top: 1rem; }
 
 p {
   font-weight: 300; }
@@ -435,6 +439,10 @@ p {
     -webkit-transition: background 0.5s;
     -o-transition: background 0.5s;
     transition: background 0.5s; }
+    .portfolios .portfolios__item > img {
+      max-height: 100px;
+      position: absolute;
+      z-index: 100; }
     .portfolios .portfolios__item::after {
       content: ' ';
       position: absolute;
@@ -455,9 +463,6 @@ p {
       transition: all 0.3s; }
     .portfolios .portfolios__item:hover a {
       opacity: 1; }
-    .portfolios .portfolios__item > img {
-      width: 100%;
-      opacity: 0; }
     .portfolios .portfolios__item .portfolio__info {
       position: absolute;
       width: 100%;
