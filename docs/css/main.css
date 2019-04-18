@@ -365,8 +365,6 @@ p {
         display: inline-block; }
 
 @media screen and (max-width: 768px) {
-  .hero .hero__image img {
-    height: 50vh; }
   .hero .hero__content {
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
