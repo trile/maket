@@ -495,6 +495,10 @@ p {
 .footer p {
   text-align: center;
   font-weight: 700; }
+  .footer p img.heart {
+    margin: 0 .3rem;
+    width: 1.5rem;
+    height: 1.5rem; }
 
 .btn {
   background: #9b59b6; }
