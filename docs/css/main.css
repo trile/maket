@@ -164,7 +164,9 @@ body {
           box-sizing: border-box;
   font-family: Circular, sans-serif;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.4rem; }
+
+.maket-page-wrapper {
   overflow-x: hidden; }
 
 section {
