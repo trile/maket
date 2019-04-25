@@ -23,9 +23,9 @@
     <div class="nav__logo"><?xml version="1.0" encoding="UTF-8"?>
         <svg viewBox="0 0 398 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
-            <g id="Page-1" stroke="#aaaaaa" stroke-width="2" fill="none" fill-rule="evenodd">
+            <g id="Page-1" stroke="#222222" stroke-width="2" fill="none" fill-rule="evenodd">
                 <g id="MAKET" transform="translate(-94.000000, -335.000000)" fill="#1A1919">
-                    <path fill="#aaaaaa" stroke="#000000" stroke-width="2" id="maket-path" d="M135.6117,415.6673 L147.6047,415.6673 L166.8177,370.7213 L166.8177,415.6673 L188.5917,415.6673 L188.5917,335.9053 L159.0167,335.9053 L141.7827,377.0093 L124.4337,335.9053 L94.8577,335.9053 L94.8577,415.6673 L116.3987,415.6673 L116.3987,370.7213 L135.6117,415.6673 Z M242.2717,385.5093 L225.6207,385.5093 L234.0037,358.3783 L242.2717,385.5093 Z M251.5867,415.6673 L276.0387,415.6673 L249.3737,335.9053 L220.0307,335.9053 L193.2497,415.6673 L216.4217,415.6673 L220.0307,404.0233 L247.9767,404.0233 L251.5867,415.6673 Z M326.4567,415.6673 L303.6347,383.0643 L303.6347,415.6673 L280.6957,415.6673 L280.6957,335.9053 L303.6347,335.9053 L303.6347,371.4203 L328.3197,335.9053 L354.9847,335.9053 L325.5257,375.2623 L354.7517,415.6673 L326.4567,415.6673 Z M358.275,355.618 L358.275,335.906 L417.412,335.906 L417.412,355.618 L358.275,355.618 Z M358.275,415.667 L358.275,395.955 L417.412,395.955 L417.412,415.667 L358.275,415.667 Z M358.275,385.643 L358.275,365.931 L417.412,365.931 L417.412,385.643 L358.275,385.643 Z M468.9787,415.6673 L468.9787,356.1663 L491.1027,356.1663 L491.1027,335.9053 L423.9157,335.9053 L423.9157,356.1663 L446.0397,356.1663 L446.0397,415.6673 L468.9787,415.6673 Z"</path>
+                    <path fill="#222222" stroke="#222222" stroke-width="2" id="maket-path" d="M135.6117,415.6673 L147.6047,415.6673 L166.8177,370.7213 L166.8177,415.6673 L188.5917,415.6673 L188.5917,335.9053 L159.0167,335.9053 L141.7827,377.0093 L124.4337,335.9053 L94.8577,335.9053 L94.8577,415.6673 L116.3987,415.6673 L116.3987,370.7213 L135.6117,415.6673 Z M242.2717,385.5093 L225.6207,385.5093 L234.0037,358.3783 L242.2717,385.5093 Z M251.5867,415.6673 L276.0387,415.6673 L249.3737,335.9053 L220.0307,335.9053 L193.2497,415.6673 L216.4217,415.6673 L220.0307,404.0233 L247.9767,404.0233 L251.5867,415.6673 Z M326.4567,415.6673 L303.6347,383.0643 L303.6347,415.6673 L280.6957,415.6673 L280.6957,335.9053 L303.6347,335.9053 L303.6347,371.4203 L328.3197,335.9053 L354.9847,335.9053 L325.5257,375.2623 L354.7517,415.6673 L326.4567,415.6673 Z M358.275,355.618 L358.275,335.906 L417.412,335.906 L417.412,355.618 L358.275,355.618 Z M358.275,415.667 L358.275,395.955 L417.412,395.955 L417.412,415.667 L358.275,415.667 Z M358.275,385.643 L358.275,365.931 L417.412,365.931 L417.412,385.643 L358.275,385.643 Z M468.9787,415.6673 L468.9787,356.1663 L491.1027,356.1663 L491.1027,335.9053 L423.9157,335.9053 L423.9157,356.1663 L446.0397,356.1663 L446.0397,415.6673 L468.9787,415.6673 Z"</path>
                 </g>
             </g>
         </svg>
@@ -47,7 +47,10 @@
         <section class="hero">
             <div class="hero__image"><img src="img/hero/hero-4.jpg" alt=""></div>
             <div class="hero__content">
-                <h1><span>We design.</span> <span>We build.</span> <span>We create.</span></h1>
+                    <div id="typed-strings">
+                        <span>We design.</span> <span>We build.</span> <span>We create.</span>
+                    </div>
+                <h1><span id="typed"></span></h1>
                 <a href="#" class="btn">Explore</a>
             </div>
         </section>
@@ -64,7 +67,7 @@
                         <!-- <div class="services__item-img"> -->
                             <img src="img/services/newspaper.svg"  alt="">
                         </div>
-                    <h3>Graphic</h3>
+                    <h3>Graphic / Print</h3>
                     <p>Magazines, logos, leaflets</p>
                 </div>
                 <div class="services__item">
@@ -72,15 +75,15 @@
                     <!-- <div class="services__item-img"> -->
                         <img src="img/services/hotel.svg" alt="">
                     </div>
-                    <h3>Architecture</h3>
-                    <p>Buildings, houses, shops</p>
+                    <h3>Architecture / Interior</h3>
+                    <p>Buildings, houses, apartments</p>
                 </div>
                 <div class="services__item">
                     <div class="services__item-img" data-aos="fade-left">
                     <!-- <div class="services__item-img"> -->
                         <img src="img/services/window.svg" alt="">
                     </div>
-                    <h3>Web</h3>
+                    <h3>Digital / Web</h3>
                     <p>Websites, applications, templates</p>
                 </div>
             </div>
@@ -173,5 +176,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/maket.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 75,
+      loop:true
+    });
+  </script>
 </body>
 </html>

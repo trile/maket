@@ -24,7 +24,10 @@
         <section class="hero">
             <div class="hero__image"><img src="img/hero/hero-4.jpg" alt=""></div>
             <div class="hero__content">
-                <h1><span>We design.</span> <span>We build.</span> <span>We create.</span></h1>
+                    <div id="typed-strings">
+                        <span>We design.</span> <span>We build.</span> <span>We create.</span>
+                    </div>
+                <h1><span id="typed"></span></h1>
                 <a href="#" class="btn">Explore</a>
             </div>
         </section>
@@ -41,7 +44,7 @@
                         <!-- <div class="services__item-img"> -->
                             <img src="img/services/newspaper.svg"  alt="">
                         </div>
-                    <h3>Graphic</h3>
+                    <h3>Graphic / Print</h3>
                     <p>Magazines, logos, leaflets</p>
                 </div>
                 <div class="services__item">
@@ -49,15 +52,15 @@
                     <!-- <div class="services__item-img"> -->
                         <img src="img/services/hotel.svg" alt="">
                     </div>
-                    <h3>Architecture</h3>
-                    <p>Buildings, houses, shops</p>
+                    <h3>Architecture / Interior</h3>
+                    <p>Buildings, houses, apartments</p>
                 </div>
                 <div class="services__item">
                     <div class="services__item-img" data-aos="fade-left">
                     <!-- <div class="services__item-img"> -->
                         <img src="img/services/window.svg" alt="">
                     </div>
-                    <h3>Web</h3>
+                    <h3>Digital / Web</h3>
                     <p>Websites, applications, templates</p>
                 </div>
             </div>
@@ -148,5 +151,13 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="js/maket.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 75,
+      loop:true
+    });
+  </script>
 </body>
 </html>

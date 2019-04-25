@@ -4,16 +4,6 @@
 
   position:relative;
 
-  // &:after {
-  //   margin-top: -5rem;
-  //   content:' ';
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 25vh;
-  //   top:0; left:0;
-  //   background:linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
-  // }
-
   & .hero__image img {
     width: 100%;
     object-fit: cover;
@@ -30,6 +20,11 @@
     text-align: center;
     color: $white;
 
+    @media screen and (max-width: $TABLET-SIZE) {
+      transform: translate(-50%, 0);
+      min-width: 25rem;
+    }
+
 
     & h1 {
       text-shadow: 0 .2rem .4rem rgba($black, .15);
@@ -41,16 +36,3 @@
   }
 }
 
-@media screen and (max-width: $TABLET-SIZE) {
-  .hero {
-    & .hero__image img {
-      // height: 50vh;
-    }
-
-    & .hero__content {
-      transform: translate(-50%, 0);
-      min-width: 25rem;
-      // color: $black;
-    }
-  }
-}
