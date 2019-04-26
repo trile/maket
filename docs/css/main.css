@@ -194,7 +194,7 @@ p {
 
 @media screen and (max-width: 768px) {
   section {
-    margin: 3rem 3rem; } }
+    padding: 3rem 3rem; } }
 
 .u-center-text {
   text-align: center !important; }
