@@ -204,6 +204,7 @@ module.exports = function (grunt) {
     // Watch files to rerun workflow and use live reload to refresh browser
     watch: {
       sass: {
+        options: { sourceMap: true },
         files: ["docs/scss/**/*.scss"],
         tasks: [
           "sass:development",

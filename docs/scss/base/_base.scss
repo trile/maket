@@ -10,7 +10,7 @@
 html {
     // This defines what 1rem is
     font-size: 62.5%; //1rem=10px; 10px/16px = .625
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 }
 
 section {
-    margin: 3rem 5rem;
+    padding: 5rem 5rem;
 }
 
 h1,h2 {

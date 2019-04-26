@@ -6,6 +6,6 @@ $(".nav__hamburger").click(function () {
 
 var typed = new Typed('#typed', {
   stringsElement: '#typed-strings',
-  typeSpeed: 75,
+  typeSpeed: 125,
   loop: true
 });

@@ -1,8 +1,12 @@
 .hero {
-  margin: 3rem 0;
+  padding: 0;
   margin-top: -5rem;
 
   position:relative;
+
+  & .hero__image {
+    height: calc(75vh);
+  }
 
   & .hero__image img {
     width: 100%;
